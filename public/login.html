@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>KKSI</title>
+ </head>
+
+ <body class="background" style="background-image: url(./gambar/Group\ 11.png)">
+    <div class="container">
+      <div class="deskripsi">
+        <img src="./gambar/logo tedk stm.png"/>
+        <br/>
+        <div class="text">
+        <h1>OPERA</h1>
+          <p>OPERA (Online Pembangunan Reading)<br/>
+          adalah sebuah platform website yang<br/>
+          digunakan sebagai wadah penyampaian<br/>
+          informasi seputar sekolah</P>
+        </div>
+      </div>  
+
+      <div class="login">
+        <img class="login-botton">
+          <form class="login_form" action="Beranda.html" amethod="post" name="form" onsubmit="return validated()">
+            <img class="logo" src="./gambar/Logo Opera 1.png">
+            <br/>
+            <label for="uname"><img class="gambar-login" src="./gambar/Profile.png"></label>
+            <input class="box-login" autocomplete="off" type="text" name="username" placeholder="Enter Username">
+            <br/>
+            <label for="psw"><img class="gambar-login" src="./gambar/LOCK.png"></label>
+            <input class="box-login" type="password" name="password" placeholder="Enter Password">
+            <br/>
+            <button type="submit">LOGIN</button>
+            <div id="login_error">invalid login, please try again!</div>
+          </form>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var username = document.forms['form']['username'];
+    var password = document.forms['form']['password'];
+
+    var login_error = document.getElementById('login_error');
+
+    function validated(){
+      if (username.value.length < 8) {
+          login_error.style.display = "block";
+          username.focus();
+          return false;
+      }
+      if (password.value.length < 8) {
+          login_error.style.display = "block";
+          return false;
+      }
+    }
+    
+      function username_Verify(){
+        if (username.value.length >= 9){
+          username.style.border = "1px solid silver";
+          username_error.style.display = "none";
+          return true;
+        }
+      }
+      function pass_Verify(){
+        if (password.value.length >= 9){
+          password.style.border = "1px solid silver";
+          pass_error.style.display = "none";
+          return true;
+        }
+      }
+  </script>
+</html>

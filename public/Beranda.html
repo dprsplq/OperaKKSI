@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css"/>
+      <link rel="stylesheet" href="comment.css">
+      <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+      <title>Online Pembangunan Reading</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a>
+              <span class="icon">
+              <img src="./gambar/Logo Opera 1.png"></span>
+              <span class="opera">OPERA</span>
+            </a>
+          </li>
+          <li class="list active">
+            <b></b>
+            <b></b>
+            <a href="./Beranda.html">
+              <span class="icon">
+              <box-icon name='home' type='solid'></box-icon></span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <b></b>
+            <b></b>
+            <a href="./Profile.html">
+              <span class="icon">
+              <box-icon name='user' type='solid'></box-icon></span>
+              <span class="title">Profile</span>
+            </a>
+          </li>
+          <li class="list">
+            <b></b>
+            <b></b>
+            <a href="https://miro.com/welcomeonboard/RDVpOEtnbVJnQXdTbVRSRFJRTjMyc29NaUt4a3JySXdlMzV2SEtaRkNIZXNHRnhIeW5NVkdzMzJJWmZZRW9aZ3wzMDc0NDU3MzY2MjEyMjM5NzA2?invite_link_id=389194639411" target="_blank">
+              <span class="icon">
+              <box-icon name='pencil' type='solid' ></box-icon></span>
+              <span class="title">Miro</span>
+            </a>
+          </li>
+          <li class="list">
+            <b></b>
+            <b></b>
+            <a href="https://lms.smkn1-cmi.sch.id/" target="_blank">
+              <span class="icon">
+              <box-icon name='book-open' type='solid'></box-icon></span>
+              <span class="title">LMS</span>
+            </a>
+          </li>
+          <li class="list">
+            <b></b>
+            <b></b>
+            <a href="./Maps.html">
+              <span class="icon">
+              <box-icon name='map' type='solid'></box-icon></span>
+              <span class="title">Maps</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="profile_content">
+          <div class="profile">
+            <a href="./login.html">
+              <i class='bx bx-log-out' id="log_out"></i>
+            </a>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <!-- main -->
+    <div class="main">
+      <div class="topbar">
+        <div class="toggle">
+          <box-icon name='menu' class='open'></box-icon>
+        </div>
+        <!-- search -->
+        <div class="search">
+          <label>
+            <input type="search" placeholder="Search Here">
+            <box-icon name='search-alt'></box-icon>
+          </label>
+        </div>
+        <!-- darkmode -->
+        <div class="popup">
+          <p>
+            <span class="icon" onclick="setDarkMode(false)">
+              <i class='bx bxs-moon'></i>
+            </span>
+            <span class="icon" onclick="setDarkMode(true)">
+              <i class='bx bx-moon' ></i>
+            </span>
+          </p>
+        </div>
+      </div>
+      <!-- slide  -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./gambar/poster/Poster Makanan.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./gambar/poster/Poster Univ.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./gambar/poster/Poster ABC.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./gambar/poster/Poster Harapan.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button-slide class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button-slide>
+          <button-slide class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button-slide>
+        </div>
+      </div>
+      <!-- hot news -->
+      <div class="d-flex justify-content-center">
+        <div class="row">
+          <div class="card" style="width: 15rem;">
+            <!-- Button trigger modal -->
+            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+              <img src="./gambar/Poster/orasi KPUP.jpeg" class="card-img-top" alt="...">
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Orasi KPUP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./gambar/Poster/orasi KPUP.jpeg" class="card-img-top" alt="...">
+                    <p>Haloo assalamualaikum warahmatullahi wabarakatuh!<br>
+                      <br>
+                      Izin menginformasikan bahwa akan diadakan Orasi Terbuka Calon Ketua Osis masa bhakti 2022/2023 pada :<br>
+                      <br>
+                      📆 Sabtu, 30 Oktober 2021<br>
+                      ⏰ 08:00 - selesai<br>
+                      🏫 Kanal Youtube MPK SMKN 1 CIMAHI<br>
+                      <br>
+                      Diharapkan akang teteh bisa menghadiri dengan cara memperhatikan pemaparan yang disampaikan oleh para Calon Ketua Osis melalui kanal youtube resmi MPK SMKN 1 CIMAHI.<br>
+                      <br>
+                      Kita memiliki kesempatan untuk mengubah masa depan, dengan memilih pemimpin yang penuh persiapan adalah salah satu tindakan. Mengetahui, memahami, dan menjalani  aspirasi dengan penuh motivasi demi terwujudnya STM yang berevolusi<br>
+                      <br>
+                      Tentukan pilihanmu demi masa depan stm yang lebih baik!<br>
+                      @mpksmkn1cimahi<br>
+                      <br>
+                      #RaiseAVoiceMakeAChoice<br>
+                      #OneChoiceForBigChange<br>
+                      #KPUP2021 #STMAntiGolput<br>
+                  </div>
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Orasi KPUP</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="card" style="width: 15rem;">
+            <!-- Button trigger modal -->
+            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+              <img src="./gambar/Poster/kelas bahasa Inggris.jpeg" class="card-img-top" alt="...">
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Kelas Bahasa Inggris</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./gambar/Poster/kelas bahasa Inggris.jpeg" class="card-img-top" alt="...">
+                    <p>✨TIPS BELAJAR BAHASA INGGRIS✨<br>
+                      <br>
+                      Belajar Bahasa Inggris itu asyik!<br>
+                      Beneran, nih? Iya!<br>
+                      Bahasa Inggris itu tidak sulit kalau kita enjoy dalam mempelajarinya. Tapi masih banyak dari kita yang menganggap Bahasa Inggris itu susah. Nah, di webinar kali ini, Teh Nisrina yang merupakan salah satu pemenang Erlangga English Speech Contest 2020, akan memberikan tips-tips dalam mempelajari Bahasa Inggris agar lebih mudah dan cepat dipahami!<br>
+                      Yuk ikut webinar "A day learning English with Nisrina Fathya" pada :<br>
+                      <br>
+                      🗓️ : Sabtu, 7 Agustus 2021<br>
+                      ⏰ : 10.00 - selesai<br>
+                      📍 : Google meet (link akan diberikan menjelang dimulai)<br>
+                      <br>
+                      Link pendaftaran : 
+                      <a herf="https://bit.ly/kelasbahasa-inggris">Link Kelas Bahasa Inggris</a>
+                      <br>
+                      <br>
+                      Kami tunggu partisipasinya, Sampai Jumpa!</p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Kelas Bahasa Inggris</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem;">
+            <!-- Button trigger modal -->
+            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+              <img src="./gambar/Poster/kelas bahasa Jepang.jpeg" class="card-img-top" alt="...">
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Kelas Bahasa Jepang</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./gambar/Poster/kelas bahasa Jepang.jpeg" class="card-img-top" alt="...">
+                    <p>Tiada Jepang tanpa Kanji<br>
+                      <br>
+                      Konnichiwa, minna-san! Kanji merupakan salah satu aksara dalam bahasa Jepang. Tapi katanya belajar kanji itu susah ya☹️<br>
+                      Eits, jangan bilang susah dulu. Pada Webinar kali ini, Kang Hilmi akan memberi tahu tentang Kanji agar teman-teman dapat mengetahuinya dengan baik😊<br>
+                      Webinar ini akan dilaksanakan pada :<br>
+                      <br>
+                      🗓️ : Sabtu, 16 Oktober 2021<br>
+                      ⏰ : 10.00 - selesai<br>
+                      📍 : WhatsApp Group & Google meet (link gmeet akan diberikan di grup menjelang acara berlangsung)<br>
+                      <br>
+                      Pendaftaran :<br>
+                      http://bit.ly/kelasbahasa-jepang<br>
+                      <br>
+                      P.S : link grup WhatsApp ada didalam link pendaftaran<br>
+                      <br>
+                      CP : wa.me/6289679340130 (Azimah)</p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Kelas Bahasa Jepang</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem;">
+            <!-- Button trigger modal -->
+            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+              <img src="./gambar/Poster/Lomba Kemerdekaan.jpeg" class="card-img-top" alt="...">
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Lomba Kemerdekaan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./gambar/Poster/Lomba Kemerdekaan.jpeg" class="card-img-top" alt="...">
+                    <p>Assalamu'alaikum warahmatullahi wabarakatuh<br>
+                      <br>
+                      Haloo akang teteh STM!!☺️✨<br>
+                      Semangat Kemerdekaan Pemuda Pemudi Indonesia! 🇮🇩<br>
+                      Untuk memperingati hari Kemerdekaan Indonesia yang ke 76, kami OSIS Sekretariat Bidang 8 mengadakan beberapa mata lomba, diantaranya:<br>
+                      1. Lomba Video Kreatif Tiktok<br>
+                      2. Lomba Desain poster<br>
+                      3. Lomba Photogenic<br>
+                      <br>
+                      Dengan tema : Kita Tangguh, Indonesia Tumbuh<br>
+                      <br>
+                      Syarat Perlombaan<br>
+                      1.	Peserta merupakan siswa/siswi SMK Negeri 1 Cimahi <br>
+                      2.	Setiap kelas wajib mengirimkan minimal 1 orang untuk mengikuti lomba. <br>
+                      3.	Karya yang dikirimkan harus orisinal dan berkaitan dengan semangat kemerdekaan<br>
+                      4. Karya tidak mengandung unsur SARA<br>
+                      5.	Panitia tidak bertanggungjawab atas gugatan pelanggaran hak cipta/plagiat yang dilakukan oleh peserta. <br>
+                      6. Untuk informasi lebih lanjut, bisa hubungi nomer dibawah ini:<br>
+                      -	Teh Tiara 081324079477<br>
+                      -  Cek instagram @osissmkn1cimahi<br>
+                      <br>
+                      Yuk ramai-ramai tunjukan kreativitas Akang Teteh untuk Kemerdekaan Indonesia 🇮🇩</p>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Lomba Kemerdekaan</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem;">
+            <!-- Button trigger modal -->
+            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+              <img src="./gambar/Poster/Open Donasi.jpeg" class="card-img-top" alt="...">
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Open Donasi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./gambar/Poster/Open Donasi.jpeg" class="card-img-top" alt="...">
+                    <p>Assalamualaikum Warahmatullahi Wabarakatuh<br>
+                      <br>
+                      Berita duka dari saudara kita semua yaitu Kang M. Farhan Dwi Putra dari kelas XI TEDK A yang mengalami musibah kecelakaan, kondisi sekarang korban sempat mengalami trauma, dan luka yang lumayan parah. <br>
+                      <br>
+                      Maka dari itu kami dari OSIS SMKN 1 Cimahi bermaksud menggalang dana untuk bantuan saudara kami yang mengalami kecelakaan. Salurkan donasi anda melalui:<br>
+                      BCA    : 139-3178-535<br>
+                      DANA : 0895-3123-3365<br>
+                      OVO    : 0895-3123-3365<br>
+                      a.n SILPIA PEBRIANTI<br>
+                      <br>
+                      Konfirmasi Transfer:<br>
+                      wa.me//6289531233365 (Silpia Pebrianti)<br>
+                      wa.me//6285794243612 (Dela Febriola)<br>
+                      <br>
+                      Dipersilahkan untuk menyebarkan kepada teman, saudara, atau grup - grup agar semakin banyak orang baik yang berpartisipasi dalam kegiatan berbagi ini.<br>
+                      <br>
+                      Wassalamualaikum warahmatullahi wabarakatuh</p>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Open Donasi</p>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem;">
+            <!-- Button trigger modal -->
+            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
+              <img src="./gambar/Poster/STM Berbagi.jpeg" class="card-img-top" alt="...">
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">STM Berbagi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./gambar/Poster/STM Berbagi.jpeg" class="card-img-top" alt="...">
+                    <p>[OPEN DONATION] <br>
+                      <br>
+                      Bismillahirrahmanirrahim<br>
+                      Assalamu'alaikum warahmatullahi wabarakatuh<br>
+                      Halo apa kabar semuanya? Semoga sehat selalu dan senantiasa dalam perlindungan Allah SWT. Aamin yra<br>
+                      <br>
+                      Anda bagian dari keluarga SMK Negeri 1 Cimahi? Mari Bergabung di Program STM BERBAGI🤗. Ayo sama-sama kita saling bahu membahu membantu saudara-saudara kita yang membutuhkan. Donasi akan disalurkan kepada saudara kita yang membutuhkan serta kepada Yayasan Yatim Piatu. Dan donasi dapat berupa :<br>
+                      💵 Uang<br>
+                      📦 Sembako, bisa berupa: Beras, Mie instan, Minyak, Sarden, Terigu dan Gula.<br>
+                      <br>
+                      Salurkan Donasi anda melalui :<br>
+                      🔹 Rekening BCA : 1393178535 <br>
+                      a.n Silpia Pebrianti<br>
+                      🔹 DANA & OVO  : 0895-3123-3365 <br>
+                      a.n Silpia Pebrianti<br>
+                      <br>
+                      CP / COD bisa menghubungi :<br>
+                      0881-2056-416   (Ramndani @46)<br>
+                      0857-9424-3612 (Dela @46)<br>
+                      <br>
+                      ⌛Batas Donasi 28 Juli 2021<br>
+                      <br>
+                      Berikan donasi terbaikmu untuk para saudara-saudara kita yang lebih membutuhkan. Berapapun jumlahnya akan sangat berharga bagi mereka. Dan semoga menjadi pahala untuk kita semua dan dibalas kebaikannya oleh Allah SWT. Aamiin Allahumma Aamiin.<br>
+                      <br>
+                      NB<br>
+                      1. Harap konfirmasi setelah transfer pada CP yang tertera.<br>
+                      2. Untuk COD apabila rumahnya ada yang berdekatan, mungkin bisa dikolektifin disatu tempat.</p>
+                  </div>
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Open Donasi</p>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem;">
+            <!-- Button trigger modal -->
+            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop9">
+              <img src="./gambar/Poster/BELAJAR DI RRI.jpeg" class="card-img-top" alt="...">
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Belajar di RRI</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./gambar/Poster/BELAJAR DI RRI.jpeg" class="card-img-top" alt="...">
+                    <p>INFO 🎙️📻 <br>
+                      Bagi siswa/siswi kelas X SMKN 1 CIMAHI yang memiliki waktu luang besok : <br>
+                      📅 Hari Kamis,23 September<br>
+                      ⏰ Pukul 10.00-11.00 <br>
+                      Silahkan bisa sambil mendengarkan siaran<br>
+                      📻 BELAJAR DI RRI<br>
+                      Lewat radio RRI<br>
+                      atau Live IG pro2bdg<br>
+                      🧕🏻 Bersama guru BK sekolah kita<br>
+                      🗒️materi MENGENAL DIRI DAN PERCAYA DIRI<br>  
+                      💡Siapkan pertanyaan terbaikmu, karena akan ada doorprize untuk siswa yang beruntung 😘</p>
+                  </div>
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Belajar di RRI</p>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem;">
+            <!-- Button trigger modal -->
+            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">
+              <img src="./gambar/Poster/DEWA MUDA 2021.jpeg" class="card-img-top" alt="...">
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Dewa Muda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./gambar/Poster/DEWA MUDA 2021.jpeg" class="card-img-top" alt="...">
+                    <p>Assalamualaikum warahmatullahi wabarakatuh. <br>
+                      <br>
+                      [BERDISKUSI BERKOLABORASI BERAKSI]<br>
+                      Halo teman-teman pelajar Kota Cimahi👋🏻<br>
+                      <br>
+                      Temen temen tau ngga sih Kota Cimahi memiliki banyak sekali pelajar? Para pelajar inilah yang nantinya diharapkan mampu memimpin negeri pada masa keemasan nanti loh, tetapi sudah siapkah pelajar cimahi untuk memimpin negeri ini?<br>
+                      <br>
+                      Forlachi atau Forum Pelajar Kota Cimahi kini hadir kembali dengan membuka<br>
+                       ✨Pendaftaran Forlachi Gen 3✨<br>
+                      untuk para pelajar di Kota Cimahi!<br>
+                      <br>
+                      Disini kita bersama-sama  mengembangkan minat, bakat dan kemampuan yang kita miliki, melalui berbagai macam program kerja yang positif dan tentunya sangat bermanfaat! <br>
+                      <br>
+                      Maka dari itu, segera daftarkan dirimu dan bergabung bersama kami di Forum pelajar kota Cimahi generasi 3!!🙌🏼🤩<br>
+                      
+                      Tautan pendaftarannya disini⤵️
+                      bit.ly/OpenRecruitmentForlachiGen3</p>
+                  </div>
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Dewa Muda</p>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem;">
+            <!-- Button trigger modal -->
+            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop12">
+              <img src="./gambar/Poster/HUT SMANSACIS.jpeg" class="card-img-top" alt="...">
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">HUT SMANCIS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./gambar/Poster/HUT SMANSACIS.jpeg" class="card-img-top" alt="...">
+                    <p>❗𝗕𝗔𝗧𝗔𝗦 𝗣𝗘𝗡𝗗𝗔𝗙𝗧𝗔𝗥𝗔𝗡 𝟭𝟱 𝗢𝗞𝗧𝗢𝗕𝗘𝗥 𝟮𝟬𝟮𝟭 𝗣𝗨𝗞𝗨𝗟 𝟮𝟰.𝟬𝟬 𝗪𝗜𝗕 <br>
+                      ■ 𝐓𝐎𝐓𝐀𝐋 𝐇𝐀𝐃𝐈𝐀𝐇 𝐏𝐔𝐋𝐔𝐇𝐀𝐍 𝐉𝐔𝐓𝐀 𝐑𝐔𝐏𝐈𝐀𝐇 🔥<br>
+                      <br>
+                      ■ 𝐃𝐀𝐏𝐀𝐓𝐊𝐀𝐍 𝐓𝐑𝐎𝐏𝐇𝐘 𝐁𝐄𝐒𝐀𝐑 𝐔𝐍𝐓𝐔𝐊 𝐉𝐔𝐀𝐑𝐀 𝐔𝐌𝐔𝐌 🔥<br>
+                      ❗ Lebih lengkapnya Cek link dibawah ini :<br>
+                      <br>
+                      ⇢ linktr.ee/HUTSMANSACIS62 (terdiri dari link pendaftaran, twibbon dan buku panduan yang berisikan juknis perlombaan)<br>
+                      <br>
+                      • Contact Person :<br>
+                      ☎️ Raden Naufal ( +62 812-2465-6133 )<br>
+                      ☎️ Melly Registyani ( +62 888-8907-887 )<br>
+                      • Instagram : @smansacisofficial<br>
+                      • Youtube : SMAN 1 CIAMIS OFFICIAL<br>
+                      <br>
+                      • Proses Pembayaran :<br>
+                      - BANK BJB : 0110186991100 ( DUDUNG QQ FIKRI FAUZI RAMDHANI )<br>
+                      - BANK BCA : 1380275356 ( APING SOPIAH )<br>
+                      - BANK BRI : 010401000524576 (  YAYAN TRIANA )<br>
+                      - COD/ Datang Kesekolah Langsung ( Apabila Memungkinkan )<br>
+                      <br>
+                      #SEMARAKANFUS62<br>
+                      #TIMETORISESMANSA<br>
+                      #SMANSACIS</p>
+                  </div>
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">HUT SMANCIS</p>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem;">
+            <!-- Button trigger modal -->
+            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+              <img src="./gambar/Poster/Qurban.jpeg" class="card-img-top" alt="...">
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Donasi Qurban</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./gambar/Poster/Qurban.jpeg" class="card-img-top" alt="...">
+                    <p>Assalamua'alaikum warahmatullahi wabarakaatuh, temen - temen! <br>
+                      <br>
+                      Bismillahirahmanirrahim.. alhamdulillah tak terasa sebentar lagi kita akan menyambut Hari Raya Idul Adha 1442H, oleh karena itu kami selaku penyelenggara acara ini ingin mengonfirmasikan kepada akang dan teteh Teknik Elektronika Daya dan Komunikasi khususnya kepada Angkatan 46 dan 47 jika ada yang berkenan untuk berdonasi, bisa melalui :<br>
+                      <br>
+                      transfer bank<br>
+                      🏦 : 1393240460 a.n Sekar Sari Ramadhanti (BCA)<br>
+                      e-money<br>
+                      💸 : 081911494166 a.n Bella Anggreani Putri (OVO, DANA, Gopay)<br>
+                      <br>
+                      batas pengumpulan Dana : 16 Juli 2021<br>
+                      <br>
+                      target 🐄🐐 : Rp. 2.400.000,-<br>
+                      <br>
+                      note : kepada akang dan teteh yang sudah mengirimkan, harap konfirmasi pengiriman ya! ^^<br>
+                      <br>
+                      jazakummullah khairan katsiran ☺️🙏🏻</p>
+                  </div>
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Donasi Qurban</p>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem;">
+            <!-- Button trigger modal -->
+            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">
+              <img src="./gambar/Poster/GERAKAN NASIONALLITERASI.jpeg" class="card-img-top" alt="...">
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Gerakan Nasional Literasi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./gambar/Poster/GERAKAN NASIONALLITERASI.jpeg" class="card-img-top" alt="...">
+                    <p>PANDUAN INSTALL ZOOM <br>
+                      Buka aplikasi Google Play Store.<br>
+                      Ketik Zoom di kolom pencarian.<br>
+                      Kamu akan menemukan aplikasi dengan ikon kamera putih-biru bernama Zoom<br> 
+                      Klik install, tunggu hingga proses download selesai.<br>
+                      <br>
+                      PANDUAN PENDAFTARAN KEGIATAN WEBINAR<br>
+                      Hari / Tanggal		: Senin, 25 Oktober 2021<br>
+                      Pukul             : 14.00 s.d. selesai<br>
+                      Link Pendaftaran 	: https://event.literasidigital.id/form/15855<br>
+                      <br>
+                      1.	Klik link pendaftaran https://event.literasidigital.id/form/15855, isi data diri dan menjawab pertanyaan pre test.<br>
+                      2.	Konfirmasi pendaftaran peserta akan terkirim muncul setelah meng klik daftar event, juga terkirim ke email peserta pendaftar.<br>
+                      3.	Informasi pada email peserta berisi Link webinar dan Token 11 digit untuk mengisi post test.<br>
+                      4.	Peserta yang telah mengisi post test akan mendapatkan E-Sertifikat yang akan terkirim ke email peserta dan berkesempatan mendapatkan doorprize.<br>
+                      <br>
+                      Terima kasih</p>
+                  </div>
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Gerakan Nasional Literasi</p>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem;">
+            <!-- Button trigger modal -->
+            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
+              <img src="./gambar/Poster/Webinar Olahraga.jpeg" class="card-img-top" alt="...">
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Webinar Olahraga</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./gambar/Poster/Webinar Olahraga.jpeg" class="card-img-top" alt="...">
+                    <p>🌟 WEBINAR OLAHRAGA DAN KESEHATAN <br>
+                      <br>
+                      <br>
+                      🔥 Cara Olahraga yang Baik dan Benar <br>
+                      <br>
+                      🗣 Pemateri : Rany Krisjayanti (Atlet Basket Jawa Barat)<br>
+                      <br>
+                      <br>
+                      💥 Save The Date 💥<br>
+                      🗓 : Rabu, 3 November 2021<br>
+                      ⏰ : 13.00 - 14.00<br>
+                      📽 : Zoom meeting<br>
+                      <br>
+                      🎁 Benefit 🎁<br>
+                      📁 : E-Sertifikat<br>
+                      👫 : Menambah relasi pertemanan<br>
+                      📚: ilmu yang bermanfaat<br>
+                      <br>
+                      <br>
+                      🤩 Jadi tunggu apalagi ayo buruan join<br>
+                      <br>
+                      💸 FREE HTM 💸<br>
+                      <br>
+                      📝 Syarat pendaftaran <br>
+                      1. Follow akun Orkes Pembangunan<br>
+                      https://instagram.com/orkes.pembangunan?utm_medium=copy_link<br>
+                      2. Isi link Google form <br>
+                      https://bit.ly/2ZLBU53<br>
+                      <br>
+                      P.S: <br>
+                      1. Link grup WhatsApp tersedia dalam form<br>
+                      2. E-Sertifikat hanya dibagikan bagi yang join di grup Whatsapp ORKES<br>
+                      <br>
+                      Terima kasih 🙏🏻</p>
+                  </div>
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Webinar Olahraga</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer-content">
+        <br><h3>O P E R A</h3>
+        <p>Jl. Mahar Martanegara No.48 Leuwigajah Desa/Kelurahan Utama, Kec. Cimahi Selatan, Kota Cimahi, Provinsi Jawa Barat 40533<br>
+           Phone (022)6629683<br>
+           <section class="footer">
+            <div class="social">
+              <a href="https://www.instagram.com/smkn1cmi/"><img src="./gambar/Instagram new.png" alt=""></a>
+              <a href="https://www.youtube.com/channel/UCMFJGQ-FUDLPRFOrew2T9sg"><img src="./gambar/YouTube new.png" alt=""></a>
+              <a href="mailto:kksiopera2021@gmail.com"><img src="./gambar/Gmail new.png" alt=""></a>
+            </div>
+          </section>
+        <div class="footer-bottom">
+          <p>copyright &copy;2021 OPERA. designed by <span>OPERA TEAM SMK NEGERI 1 CIMAHI</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    // MenuToggle
+    let toggle = document.querySelector('.toggle');
+    let navigation = document.querySelector('.navigation');
+    let main = document.querySelector('.main');
+
+    toggle.onclick = function(){
+      navigation.classList.toggle('active');
+      main.classList.toggle('active');
+    }
+
+    // add hovered class in selected list item
+    let list = document.querySelectorAll('.list');
+    for (let i=0; i<list.length; i++){
+      list[i].onclick = function(){
+        let j = 0;
+        while(j < list.length){
+          list[j++].className = 'list';
+        }
+        list[i].className ='list active';
+      }
+    }
+    // darkmode
+    function setDarkMode(isDark){
+
+      if(isDark){
+        document.body.setAttribute('id', 'darkmode')
+      } else {
+        document.body.setAttribute('id', '')
+      }
+    }
+    </script>
+
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <meta content="605290750797576" property='fb:admins'/>
+    <script type='text/javascript'>
+      function commentToggle(selectTab) {
+        $(".comments-tab").addClass("inactive-select-tab");
+        $(selectTab).removeClass("inactive-select-tab");
+        $(".comments-page").hide();
+        $(selectTab + "-page").show();
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+  </body>
+</html>
